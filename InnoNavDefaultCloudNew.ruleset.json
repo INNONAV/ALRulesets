@@ -406,6 +406,146 @@
             "id": "LC0070",
             "justification": "Zero index access on 1-based List objects.",
             "action": "Error"
+        },
+        {
+          "justification": "You must specify open and close parenthesis after 'UserSecurityId'.",
+          "action": "Error",
+          "id": "AA0008"
+        },
+        {
+          "justification": "For pages of the type API the value of properties APIPublisher, APIGroup, EntityName, and EntitySetName should be camel-cased.",
+          "action": "Error",
+          "id": "AA0101"
+        },
+        {
+          "justification": "For queries of the type API the value of properties APIPublisher, APIGroup, EntityName, and EntitySetName should be camel-cased.",
+          "action": "Error",
+          "id": "AA0103"
+        },
+        {
+          "justification": "Variable 'i' is unused in 'CheckAndUpdateAppSettings'.",
+          "action": "Error",
+          "id": "AA0137"
+        },
+        {
+          "justification": "Possible overflow assigning 'Text[100]' to 'Code[80]'.",
+          "action": "Error",
+          "id": "AA0139"
+        },
+        {
+          "justification": "Variable 'ViewNeoMappingLines' queries the database in 'ViewNeoMappingLinesIdentifierOnBeforeValidateIdentifier' but does not use the queried record. Only find or get record if you need to access the values. Consider using ISEMPTY.",
+          "action": "Error",
+          "id": "AA0175"
+        },
+        {
+          "justification": "Remember to specify either the 'OnAction' trigger or the 'RunObject' property on an action.",
+          "action": "Error",
+          "id": "AA0194"
+        },
+        {
+          "justification": "The name of the global variable 'ShowJobDetails' is identical to a field, method, or action in the same scope.",
+          "action": "Error",
+          "id": "AA0204"
+        },
+        {
+          "justification": "Use of unassigned variable 'AppRec'.",
+          "action": "Error",
+          "id": "AA0205"
+        },
+        {
+          "justification": "The variable 'MyTotalCustomerHours' is initialized but not used.",
+          "action": "Error",
+          "id": "AA0206"
+        },
+        {
+          "justification": "The Table Job Resource must have specified ObsoleteState and ObsoleteReason.",
+          "action": "Error",
+          "id": "AA0213"
+        },
+        {
+          "justification": "The record FinkzeitTaskResource should be modified before saving to the database.",
+          "action": "Error",
+          "id": "AA0214"
+        },
+        {
+          "justification": "The Caption property for PageField \"Parent Task Code\" must be filled in.",
+          "action": "Error",
+          "id": "AA0225"
+        },
+        {
+          "justification": "The FlowField Duration of \"Finkzeit Task Time\" should be added to the SIFT key.",
+          "action": "Error",
+          "id": "AA0232"
+        },
+        {
+          "justification": "The name of non temporary variables 'TempJsonBuffer' must not be prefixed with Temp.",
+          "action": "Error",
+          "id": "AA0237"
+        },
+        {
+          "justification": "The name of the parameter 'DevopsProject' is identical to a global variable.",
+          "action": "Error",
+          "id": "AA0244"
+        },
+        {
+          "justification": "The name of the parameter 'FormID' is identical to a field, method, or action in the same scope.",
+          "action": "Error",
+          "id": "AA0245"
+        },
+        {
+          "justification": "Sorting field 'Job Task No.' should be part of the keys for table 'Sales Cr.Memo Line'",
+          "action": "Error",
+          "id": "AL0254"
+        },
+        {
+          "justification": "Codeunit 'NoSeriesManagement' is marked for removal. Reason: Please use the \"No. Series\" and \"No. Series - Batch\" codeunits instead. Tag: 24.0.",
+          "action": "Error",
+          "id": "AL0432"
+        },
+        {
+          "justification": "Table 'Job Resource' is removed.  This warning will become an error in a future release.",
+          "action": "Error",
+          "id": "AL0601"
+        },
+        {
+          "justification": "The 'StandardSalesCreditMemoJobINN' already defines a built-in member called 'Language'. Choose another name for GlobalVariable 'Language', or it might cause runtime issues. This warning will become an error when targeting a runtime with version '15.0' or higher.",
+          "action": "Error",
+          "id": "AL0755"
+        },
+        {
+          "justification": "The LayoutFile './src/InnonavSalesNew.rdlc' is already being used. To avoid build issues, a layout file shouldn't be updated by different layouts.",
+          "action": "Error",
+          "id": "AL0835"
+        },
+        {
+          "justification": "A Blob cannot be used as a source expression for a page field.",
+          "action": "Error",
+          "id": "AW0004"
+        },
+        {
+          "justification": "Action with name 'Apps' should have a value for the Image property.",
+          "action": "Error",
+          "id": "AW0005"
+        },
+        {
+          "justification": "The page 'Business Site Env. Type Apps' should use the UsageCategory and ApplicationArea properties to be searchable.",
+          "action": "Error",
+          "id": "AW0006"
+        },
+        {
+          "justification": "The repeater 'General' in page 'Job Activity List' is not supported by the Web client. The Web client does not support displaying repeater controls in pages of type 'CardPart'.",
+          "action": "Error",
+          "id": "AW0008"
+        },
+        {
+          "justification": "Group \"Actions\" only contains promoted actions that are not set to PromotedOnly=\"true\".",
+          "action": "Error",
+          "id": "AW0011"
+        },
+        {
+          "justification": "The ordinal value '100 'for the EnumValue 'Tasks' is not valid. It should be within the range '[50000..99999]', which is allocated to the application.",
+          "action": "Error",
+          "id": "PTE0023"
         }
     ]
 }
