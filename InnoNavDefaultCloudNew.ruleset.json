@@ -43,6 +43,16 @@
             "justification": "Rule deactivated: 'The Tooltip property for x must be filled.'"
         },
         {
+            "id": "AA0228",
+            "action": "Error",
+            "justification": "Unused methods should be deleted."
+        },
+        {
+            "id": "AL0606",
+            "action": "Error",
+            "justification": "With should never be used."
+        },
+        {
             "id": "LC0000",
             "justification": "An error ocurred in a given rule. Please create an issue on GitHub",
             "action": "Error"
