@@ -23,6 +23,11 @@
         "justification": "Rule deactivated: 'The name of temporary variable 'x' must be prefixed with Temp.'"
       },
       {
+        "id": "AA0074",
+        "action": "Error",
+        "justification": "Variable 'myUselessLabel' must have a suffix from this list: Msg, Tok, Err, Qst, Lbl, Txt"
+      },
+      {
         "id": "AA0101",
         "action": "Error",
         "justification": "For pages of the type API the value of properties APIPublisher, APIGroup, EntityName, and EntitySetName should be camel-cased."
@@ -146,6 +151,11 @@
         "id": "AL0601",
         "action": "Error",
         "justification": "Table 'Job Resource' is removed.  This warning will become an error in a future release."
+      },
+      {
+        "id": "AL0604",
+        "action": "Error",
+        "justification": "Use of implicit 'with' will be removed in the future. Qualify with 'Rec'. This warning will become an error in a future release."
       },
       {
         "id": "AL0606",
@@ -424,7 +434,7 @@
       },
       {
         "id": "LC0047",
-        "action": "Error",
+        "action": "None",
         "justification": "Locked Label must have a suffix Tok."
       },
       {
