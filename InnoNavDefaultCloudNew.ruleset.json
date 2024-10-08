@@ -28,6 +28,11 @@
             "justification": "Rule deactivated: 'The table Configuration Line does not contain a key with the field x'"
         },
         {
+            "id": "AA0215",
+            "action": "Error",
+            "justification": "Naming should always be correct."
+        },
+        {
             "id": "AA0217",
             "action": "None",
             "justification": "Rule deactivated: 'Use a text constant or label for format string in StrSubstNo.'"
