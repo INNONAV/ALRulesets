@@ -1,0 +1,43 @@
+{
+    "name": "InnoNav Default Cloud New",
+    "description": "For New Cloud Projects",
+    "includedRuleSets": [
+        {
+            "action": "Default",
+            "path": "https://raw.githubusercontent.com/INNONAV/ALRulesets/refs/heads/main/InnoNavBase.ruleset.json"
+        }
+    ],
+    "rules": [
+      {
+          "id": "AA0137",
+          "action": "Error",
+          "justification": "Variable is unused in."
+      },
+      {
+        "id": "LC0001",
+        "action": "Error",
+        "justification": "FlowFields should not be editable."
+      },
+      {
+        "id": "LC0003",
+        "action": "Error",
+        "justification": "Do not use an Object ID for properties or variables declaration. Use Sales Header instead."
+      },
+      {
+        "id": "LC0005",
+        "action": "Error",
+        "justification": "Wrong casing detected! Use Sales Header instead."
+      },
+      {
+        "id": "LC0015",
+        "action": "Error",
+        "justification": "All application objects should be covered by at least one permission set in the extension."
+      },
+      {
+        "id": "LC0008",
+        "action": "Error",
+        "justification": "You must specify open and close parenthesis after 'Insert'."
+      }
+    ]
+  }
+  

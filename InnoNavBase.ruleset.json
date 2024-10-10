@@ -1,0 +1,91 @@
+{
+    "name": "InnoNav Ruleset",
+    "description": "These rules must be respected by all the AL code written within the company.",
+    "rules": [
+        {
+            "id": "AA0005",
+            "action": "None",
+            "justification": "Rule deactivated: 'Only use BEGIN..END to enclose compound statements.'"
+        },
+        {
+            "id": "AA0470",
+            "action": "None",
+            "justification": "Rule deactivated: 'Variable 'x' with placeholders should have a comment explaining their content.'"
+        },
+        {
+            "id": "AA0072",
+            "action": "None",
+            "justification": "Rule deactivated: 'The name of x is not valid. The name of variables and parameters must be suffixed with the type or object name.'"
+        },
+        {
+            "id": "AA0073",
+            "action": "None",
+            "justification": "Rule deactivated: 'The name of temporary variable 'x' must be prefixed with Temp.'"
+        },
+        {
+            "id": "AA0210",
+            "action": "None",
+            "justification": "Rule deactivated: 'The table Configuration Line does not contain a key with the field x'"
+        },
+        {
+            "id": "AA0217",
+            "action": "None",
+            "justification": "Rule deactivated: 'Use a text constant or label for format string in StrSubstNo.'"
+        },
+        {
+            "id": "AA0218",
+            "action": "None",
+            "justification": "Rule deactivated: 'The Tooltip property for x must be filled.'"
+        },
+        {
+          "id": "LC0007",
+          "action": "None",
+          "justification": "Every table needs to specify a value for the DataPerCompany property. Either true or false."
+        },
+        {
+          "id": "LC0009",
+          "action": "None",
+          "justification": "Show info message about code metrics for each function or trigger."
+        },
+        {
+          "id": "LC0011",
+          "action": "None",
+          "justification": "Every object needs to specify a value for the Access property. Either true or false. Optionally this can also be activated for table fields with the setting enableRule0011ForTableFields."
+        },
+        {
+          "id": "LC0034",
+          "action": "None",
+          "justification": "The property Extensible should be explicitly set for public objects."
+        },
+        {
+          "id": "LC0047",
+          "action": "None",
+          "justification": "Locked Label must have a suffix Tok."
+        },
+        {
+          "id": "LC0053",
+          "action": "None",
+          "justification": "The internal procedure is only used in the object in which it is declared. Consider making the procedure local."
+        },
+        {
+          "id": "LC0055",
+          "action": "None",
+          "justification": "The suffix Tok is meant to be used when the value of the label matches the name."
+        },
+        {
+          "id": "LC0065",
+          "action": "None",
+          "justification": "Event subscriber var keyword mismatch."
+        },
+        {
+          "id": "LC0068",
+          "action": "None",
+          "justification": "Informs the user that there are missing permission to access tabledata."
+        },
+        {
+          "id": "LC0069",
+          "action": "None",
+          "justification": "Empty statements should be avoided or should have a leading or trailing comment explaining their use."
+        }
+    ]
+}
