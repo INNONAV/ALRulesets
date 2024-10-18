@@ -9,6 +9,11 @@
   ],
   "rules": [
     {
+      "id": "AA0001",
+      "action": "Error",
+      "justification": "There must be exactly one space character on each side of a binary operator such as := + - AND OR ="
+    },
+    {
       "id": "AA0008",
       "action": "Error",
       "justification": "You must specify open and close parenthesis after 'UserSecurityId'."
@@ -32,6 +37,11 @@
       "id": "AA0103",
       "action": "Error",
       "justification": "For queries of the type API the value of properties APIPublisher, APIGroup, EntityName, and EntitySetName should be camel-cased."
+    },
+    {
+      "id": "AA0104",
+      "action": "Error",
+      "justification": "Column controls in queries of type API should have a camel case name."
     },
     {
       "id": "AA0139",
@@ -99,6 +109,11 @@
       "justification": "The name of non temporary variables 'TempJsonBuffer' must not be prefixed with Temp."
     },
     {
+      "id": "AA0241",
+      "action": "Error",
+      "justification": "You must use all lowercase letters for reserved keyword 'True'/'False'"
+    },
+    {
       "id": "AA0244",
       "action": "Error",
       "justification": "The name of the parameter 'DevopsProject' is identical to a global variable."
@@ -107,6 +122,11 @@
       "id": "AA0245",
       "action": "Error",
       "justification": "The name of the parameter 'FormID' is identical to a field, method, or action in the same scope."
+    },
+    {
+      "id": "AA0248",
+      "action": "Error",
+      "justification": "Use the this keyword for codeunit self-reference."
     },
     {
       "id": "AL0254",
