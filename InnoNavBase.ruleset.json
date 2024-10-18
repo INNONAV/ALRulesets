@@ -38,6 +38,16 @@
             "justification": "Rule deactivated: 'The Tooltip property for x must be filled.'"
         },
         {
+          "id": "AA0241",
+          "action": "None",
+          "justification": "You must use all lowercase letters for reserved keyword 'True'/'False'"
+        },
+        {
+          "id": "AA0248",
+          "action": "None",
+          "justification": "Use the this keyword for codeunit self-reference."
+        },
+        {
           "id": "LC0007",
           "action": "None",
           "justification": "Every table needs to specify a value for the DataPerCompany property. Either true or false."

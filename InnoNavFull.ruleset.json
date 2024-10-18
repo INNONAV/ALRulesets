@@ -109,11 +109,6 @@
       "justification": "The name of non temporary variables 'TempJsonBuffer' must not be prefixed with Temp."
     },
     {
-      "id": "AA0241",
-      "action": "Error",
-      "justification": "You must use all lowercase letters for reserved keyword 'True'/'False'"
-    },
-    {
       "id": "AA0244",
       "action": "Error",
       "justification": "The name of the parameter 'DevopsProject' is identical to a global variable."
@@ -122,11 +117,6 @@
       "id": "AA0245",
       "action": "Error",
       "justification": "The name of the parameter 'FormID' is identical to a field, method, or action in the same scope."
-    },
-    {
-      "id": "AA0248",
-      "action": "Error",
-      "justification": "Use the this keyword for codeunit self-reference."
     },
     {
       "id": "AL0254",
