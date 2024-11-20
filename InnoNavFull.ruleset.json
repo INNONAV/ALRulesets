@@ -19,11 +19,6 @@
       "justification": "You must specify open and close parenthesis after 'UserSecurityId'."
     },
     {
-      "id": "AA0018",
-      "action": "Error",
-      "justification": "The 'if' keyword should always start a line."
-    },
-    {
       "id": "AA0021",
       "action": "Error",
       "justification": "Variable declarations should be ordered by type. Variables should be sorted like this: Record, Report, Codeunit, XmlPort, Page, Query, Notification, BigText, DateFormula, RecordId, RecordRef, FieldRef, and FilterPageBuilder. The rest of the variables are not sorted."
