@@ -9,6 +9,21 @@
   ],
   "rules": [
     {
+      "id": "LC0000",
+      "action": "None",
+      "justification": "An error ocurred in a given rule. Please create an issue on GitHub"
+    },
+    {
+      "id": "LC0014",
+      "action": "None",
+      "justification": "The Caption of permissionset objects should not exceed the maximum length."
+    },
+    {
+      "id": "LC0052",
+      "action": "None",
+      "justification": "The internal procedure is declared but never used."
+    },
+    {
       "id": "AA0001",
       "action": "Error",
       "justification": "There must be exactly one space character on each side of a binary operator such as := + - AND OR ="
@@ -199,11 +214,6 @@
       "justification": "Group \"Actions\" only contains promoted actions that are not set to PromotedOnly=\"true\"."
     },
     {
-      "id": "LC0000",
-      "action": "Error",
-      "justification": "An error ocurred in a given rule. Please create an issue on GitHub"
-    },
-    {
       "id": "LC0002",
       "action": "Error",
       "justification": "Commit() needs a comment to justify its existence. Either a leading or a trailing comment."
@@ -232,11 +242,6 @@
       "id": "LC0013",
       "action": "Error",
       "justification": "Any table with a single field in the PK of type code or text, should have set NotBlank on the PK field."
-    },
-    {
-      "id": "LC0014",
-      "action": "Error",
-      "justification": "The Caption of permissionset objects should not exceed the maximum length."
     },
     {
       "id": "LC0016",
@@ -407,11 +412,6 @@
       "id": "LC0051",
       "action": "Error",
       "justification": "Do not assign a text to a target with smaller size."
-    },
-    {
-      "id": "LC0052",
-      "action": "Error",
-      "justification": "The internal procedure is declared but never used."
     },
     {
       "id": "LC0054",
