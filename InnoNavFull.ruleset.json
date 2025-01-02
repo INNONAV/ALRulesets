@@ -1,487 +1,492 @@
 {
-  "name": "InnoNav Default Cloud New",
-  "description": "For New Cloud Projects",
-  "includedRuleSets": [
-    {
-      "action": "Default",
-      "path": "https://raw.githubusercontent.com/INNONAV/ALRulesets/refs/heads/main/InnoNavCore.ruleset.json"
-    }
-  ],
-  "rules": [
-    {
-      "id": "LC0000",
-      "action": "None",
-      "justification": "An error ocurred in a given rule. Please create an issue on GitHub"
-    },
-    {
-      "id": "LC0014",
-      "action": "None",
-      "justification": "The Caption of permissionset objects should not exceed the maximum length."
-    },
-    {
-      "id": "LC0052",
-      "action": "None",
-      "justification": "The internal procedure is declared but never used."
-    },
-    {
-      "id": "AA0001",
-      "action": "Error",
-      "justification": "There must be exactly one space character on each side of a binary operator such as := + - AND OR ="
-    },
-    {
-      "id": "AA0008",
-      "action": "Error",
-      "justification": "You must specify open and close parenthesis after 'UserSecurityId'."
-    },
-    {
-      "id": "AA0021",
-      "action": "Error",
-      "justification": "Variable declarations should be ordered by type. Variables should be sorted like this: Record, Report, Codeunit, XmlPort, Page, Query, Notification, BigText, DateFormula, RecordId, RecordRef, FieldRef, and FilterPageBuilder. The rest of the variables are not sorted."
-    },
-    {
-      "id": "AA0074",
-      "action": "Error",
-      "justification": "Variable 'myUselessLabel' must have a suffix from this list: Msg, Tok, Err, Qst, Lbl, Txt"
-    },
-    {
-      "id": "AA0101",
-      "action": "Error",
-      "justification": "For pages of the type API the value of properties APIPublisher, APIGroup, EntityName, and EntitySetName should be camel-cased."
-    },
-    {
-      "id": "AA0103",
-      "action": "Error",
-      "justification": "For queries of the type API the value of properties APIPublisher, APIGroup, EntityName, and EntitySetName should be camel-cased."
-    },
-    {
-      "id": "AA0104",
-      "action": "Error",
-      "justification": "Column controls in queries of type API should have a camel case name."
-    },
-    {
-      "id": "AA0139",
-      "action": "Error",
-      "justification": "Possible overflow assigning 'Text[100]' to 'Code[80]'."
-    },
-    {
-      "id": "AA0175",
-      "action": "Error",
-      "justification": "Variable 'ViewNeoMappingLines' queries the database in 'ViewNeoMappingLinesIdentifierOnBeforeValidateIdentifier' but does not use the queried record. Only find or get record if you need to access the values. Consider using ISEMPTY."
-    },
-    {
-      "id": "AA0194",
-      "action": "Error",
-      "justification": "Remember to specify either the 'OnAction' trigger or the 'RunObject' property on an action."
-    },
-    {
-      "id": "AA0198",
-      "action": "Error",
-      "justification": "The name of the local variable is identical to a global variable."
-    },
-    {
-      "id": "AA0204",
-      "action": "Error",
-      "justification": "The name of the global variable 'ShowJobDetails' is identical to a field, method, or action in the same scope."
-    },
-    {
-      "id": "AA0205",
-      "action": "Error",
-      "justification": "Use of unassigned variable 'AppRec'."
-    },
-    {
-      "id": "AA0206",
-      "action": "Error",
-      "justification": "The variable 'MyTotalCustomerHours' is initialized but not used."
-    },
-    {
-      "id": "AA0213",
-      "action": "Error",
-      "justification": "The Table Job Resource must have specified ObsoleteState and ObsoleteReason."
-    },
-    {
-      "id": "AA0214",
-      "action": "Error",
-      "justification": "The record FinkzeitTaskResource should be modified before saving to the database."
-    },
-    {
-      "id": "AA0215",
-      "action": "Error",
-      "justification": "Naming should always be correct."
-    },
-    {
-      "id": "AA0225",
-      "action": "Error",
-      "justification": "The Caption property for PageField \"Parent Task Code\" must be filled in."
-    },
-    {
-      "id": "AA0228",
-      "action": "Error",
-      "justification": "Unused methods should be deleted."
-    },
-    {
-      "id": "AA0232",
-      "action": "Error",
-      "justification": "The FlowField Duration of \"Finkzeit Task Time\" should be added to the SIFT key."
-    },
-    {
-      "id": "AA0237",
-      "action": "Error",
-      "justification": "The name of non temporary variables 'TempJsonBuffer' must not be prefixed with Temp."
-    },
-    {
-      "id": "AA0244",
-      "action": "Error",
-      "justification": "The name of the parameter 'DevopsProject' is identical to a global variable."
-    },
-    {
-      "id": "AA0245",
-      "action": "Error",
-      "justification": "The name of the parameter 'FormID' is identical to a field, method, or action in the same scope."
-    },
-    {
-      "id": "AL0254",
-      "action": "Error",
-      "justification": "Sorting field 'Job Task No.' should be part of the keys for table 'Sales Cr.Memo Line'"
-    },
-    {
-      "id": "AL0432",
-      "action": "Error",
-      "justification": "Codeunit 'NoSeriesManagement' is marked for removal. Reason: Please use the \"No. Series\" and \"No. Series - Batch\" codeunits instead. Tag: 24.0."
-    },
-    {
-      "id": "AL0601",
-      "action": "Error",
-      "justification": "Table 'Job Resource' is removed.  This warning will become an error in a future release."
-    },
-    {
-      "id": "AL0603",
-      "action": "Error",
-      "justification": "An implicit conversion is being performed from a value of type 'Enum ' to a value of type 'Option'. This conversion can lead to unexpected runtime issues."
-    },
-    {
-      "id": "AL0604",
-      "action": "Error",
-      "justification": "Use of implicit 'with' will be removed in the future. Qualify with 'Rec'. This warning will become an error in a future release."
-    },
-    {
-      "id": "AL0606",
-      "action": "Error",
-      "justification": "With should never be used."
-    },
-    {
-      "id": "AL0667",
-      "action": "Error",
-      "justification": "'NewPage' is being deprecated in the versions: '1.0' or greater.  This warning will become an error in a future release."
-    },
-    {
-      "id": "AL0755",
-      "action": "Error",
-      "justification": "The 'StandardSalesCreditMemoJobINN' already defines a built-in member called 'Language'. Choose another name for GlobalVariable 'Language', or it might cause runtime issues. This warning will become an error when targeting a runtime with version '15.0' or higher."
-    },
-    {
-      "id": "AL0835",
-      "action": "Error",
-      "justification": "The LayoutFile './src/InnonavSalesNew.rdlc' is already being used. To avoid build issues, a layout file shouldn't be updated by different layouts."
-    },
-    {
-      "id": "AW0004",
-      "action": "Error",
-      "justification": "A Blob cannot be used as a source expression for a page field."
-    },
-    {
-      "id": "AW0005",
-      "action": "Error",
-      "justification": "Action with name 'Apps' should have a value for the Image property."
-    },
-    {
-      "id": "AW0006",
-      "action": "Error",
-      "justification": "The page 'Business Site Env. Type Apps' should use the UsageCategory and ApplicationArea properties to be searchable."
-    },
-    {
-      "id": "AW0008",
-      "action": "Error",
-      "justification": "The repeater 'General' in page 'Job Activity List' is not supported by the Web client. The Web client does not support displaying repeater controls in pages of type 'CardPart'."
-    },
-    {
-      "id": "AW0009",
-      "action": "Error",
-      "justification": "Using a Blob with subtype Bitmap on a page field is deprecated. Instead use the Media/MediaSet data types."
-    },
-    {
-      "id": "AW0011",
-      "action": "Error",
-      "justification": "Group \"Actions\" only contains promoted actions that are not set to PromotedOnly=\"true\"."
-    },
-    {
-      "id": "LC0002",
-      "action": "Error",
-      "justification": "Commit() needs a comment to justify its existence. Either a leading or a trailing comment."
-    },
-    {
-      "id": "LC0004",
-      "action": "Error",
-      "justification": "DrillDownPageId and LookupPageId must be filled in table when table is used in list page."
-    },
-    {
-      "id": "LC0006",
-      "action": "Error",
-      "justification": "Fields with property AutoIncrement cannot be used in temporary table (TableType = Temporary)."
-    },
-    {
-      "id": "LC0010",
-      "action": "Error",
-      "justification": "Show warning about code metrics for each function or trigger if either cyclomatic complexity is 8 or greater or maintainability index 20 or lower."
-    },
-    {
-      "id": "LC0012",
-      "action": "Error",
-      "justification": "Using hardcoded IDs in functions like Codeunit.Run() is not allowed."
-    },
-    {
-      "id": "LC0013",
-      "action": "Error",
-      "justification": "Any table with a single field in the PK of type code or text, should have set NotBlank on the PK field."
-    },
-    {
-      "id": "LC0016",
-      "action": "Error",
-      "justification": "Caption is missing. Optionally this can also be activated for fields on API objects with the setting enableRule0016ForApiObjects."
-    },
-    {
-      "id": "LC0017",
-      "action": "Error",
-      "justification": "Writing to a FlowField is not common. Add a comment to explain this."
-    },
-    {
-      "id": "LC0018",
-      "action": "Error",
-      "justification": "Events in internal codeunits are not accessible to extensions and should therefore be avoided."
-    },
-    {
-      "id": "LC0019",
-      "action": "Error",
-      "justification": "If Data Classification is set on the Table. Fields do not need the same classification."
-    },
-    {
-      "id": "LC0020",
-      "action": "Error",
-      "justification": "If Application Area is set on the TablePage. Controls do not need the same classification."
-    },
-    {
-      "id": "LC0021",
-      "action": "Error",
-      "justification": "Confirm() must be implemented through the Confirm Management codeunit from the System Application."
-    },
-    {
-      "id": "LC0022",
-      "action": "Error",
-      "justification": "GlobalLanguage() must be implemented through the Translation Helper codeunit from the Base Application."
-    },
-    {
-      "id": "LC0023",
-      "action": "Error",
-      "justification": "Always provide fieldsgroups DropDown and Brick on tables."
-    },
-    {
-      "id": "LC0024",
-      "action": "Error",
-      "justification": "Procedure or Trigger declaration should not end with semicolon."
-    },
-    {
-      "id": "LC0025",
-      "action": "Error",
-      "justification": "Procedure must be either local, internal or define a documentation comment."
-    },
-    {
-      "id": "LC0026",
-      "action": "Error",
-      "justification": "ToolTip must end with a dot."
-    },
-    {
-      "id": "LC0027",
-      "action": "Error",
-      "justification": "Utilize the Page Management codeunit for launching page."
-    },
-    {
-      "id": "LC0028",
-      "action": "Error",
-      "justification": "Event subscriber arguments now use identifier syntax instead of string literals."
-    },
-    {
-      "id": "LC0029",
-      "action": "Error",
-      "justification": "Use CompareDateTime method in Type Helper codeunit for DateTime variable comparisons."
-    },
-    {
-      "id": "LC0030",
-      "action": "Error",
-      "justification": "Set Access property to Internal for Install/Upgrade codeunits."
-    },
-    {
-      "id": "LC0031",
-      "action": "Error",
-      "justification": "Set ReadIsolation property instead of LockTable method."
-    },
-    {
-      "id": "LC0032",
-      "action": "Error",
-      "justification": "Clear(All) does not affect or change values for global variables in single instance codeunits."
-    },
-    {
-      "id": "LC0033",
-      "action": "Error",
-      "justification": "The specified runtime version in app.json is falling behind."
-    },
-    {
-      "id": "LC0035",
-      "action": "Error",
-      "justification": "Explicitly set AllowInCustomizations for fields omitted on pages."
-    },
-    {
-      "id": "LC0036",
-      "action": "Error",
-      "justification": "ToolTip must start with the verb Specifies."
-    },
-    {
-      "id": "LC0037",
-      "action": "Error",
-      "justification": "Do not use line breaks in ToolTip."
-    },
-    {
-      "id": "LC0038",
-      "action": "Error",
-      "justification": "Try to not exceed 200 characters (including spaces)."
-    },
-    {
-      "id": "LC0039",
-      "action": "Error",
-      "justification": "The given argument has a different type from the one expected."
-    },
-    {
-      "id": "LC0040",
-      "action": "Error",
-      "justification": "Explicitly set the RunTrigger parameter on build-in methods."
-    },
-    {
-      "id": "LC0041",
-      "action": "Error",
-      "justification": "Empty Captions should be Locked."
-    },
-    {
-      "id": "LC0042",
-      "action": "Error",
-      "justification": "AutoCalcFields should only be used for FlowFields or Blob fields."
-    },
-    {
-      "id": "LC0043",
-      "action": "Error",
-      "justification": "Use SecretText type to protect credentials and sensitive textual values from being revealed."
-    },
-    {
-      "id": "LC0044",
-      "action": "Error",
-      "justification": "Tables coupled with TransferFields must have matching fields."
-    },
-    {
-      "id": "LC0045",
-      "action": "Error",
-      "justification": "Zero (0) Enum value should be reserved for Empty Value."
-    },
-    {
-      "id": "LC0046",
-      "action": "Error",
-      "justification": "Label with suffix Tok must be locked."
-    },
-    {
-      "id": "LC0048",
-      "action": "Error",
-      "justification": "Use Error with a ErrorInfo or Label variable to improve telemetry details."
-    },
-    {
-      "id": "LC0049",
-      "action": "Error",
-      "justification": "SourceTable property not defined on Page."
-    },
-    {
-      "id": "LC0050",
-      "action": "Error",
-      "justification": "SetFilter with unsupported operator in filter expression."
-    },
-    {
-      "id": "LC0051",
-      "action": "Error",
-      "justification": "Do not assign a text to a target with smaller size."
-    },
-    {
-      "id": "LC0054",
-      "action": "Error",
-      "justification": "Interface name must start with the capital 'I' without any spaces following it."
-    },
-    {
-      "id": "LC0056",
-      "action": "Error",
-      "justification": "Empty Enum values should not have a specified Caption property."
-    },
-    {
-      "id": "LC0057",
-      "action": "Error",
-      "justification": "Enum values must have non-empty a Caption to be selectable in the client"
-    },
-    {
-      "id": "LC0058",
-      "action": "Error",
-      "justification": "PageVariable.SetRecord(): You cannot use a temporary record for the Record parameter."
-    },
-    {
-      "id": "LC0059",
-      "action": "Error",
-      "justification": "Single quote escaping issue detected."
-    },
-    {
-      "id": "LC0060",
-      "action": "Error",
-      "justification": "The ApplicationArea property is not applicable to API pages."
-    },
-    {
-      "id": "LC0061",
-      "action": "Error",
-      "justification": "Pages of type API must have the ODataKeyFields property set to the SystemId field."
-    },
-    {
-      "id": "LC0062",
-      "action": "Error",
-      "justification": "Mandatory field is missing on API page."
-    },
-    {
-      "id": "LC0063",
-      "action": "Error",
-      "justification": "Consider naming field with a more descriptive name."
-    },
-    {
-      "id": "LC0064",
-      "action": "Error",
-      "justification": "Missing ToolTip property on table field."
-    },
-    {
-      "id": "LC0066",
-      "action": "Error",
-      "justification": "Duplicate ToolTip between page and table field."
-    },
-    {
-      "id": "LC0067",
-      "action": "Error",
-      "justification": "Set NotBlank property to false when 'No. Series' TableRelation exists."
-    },
-    {
-      "id": "LC0070",
-      "action": "Error",
-      "justification": "Zero index access on 1-based List objects."
-    },
-    {
-      "id": "PTE0023",
-      "action": "Error",
-      "justification": "The ordinal value '100 'for the EnumValue 'Tasks' is not valid. It should be within the range '[50000..99999]', which is allocated to the application."
-    }
-  ]
+    "name": "InnoNav Default Cloud New",
+    "description": "For New Cloud Projects",
+    "includedRuleSets": [
+        {
+            "action": "Default",
+            "path": "https://raw.githubusercontent.com/INNONAV/ALRulesets/refs/heads/main/InnoNavCore.ruleset.json"
+        }
+    ],
+    "rules": [
+        {
+            "id": "AA0001",
+            "action": "Error",
+            "justification": "There must be exactly one space character on each side of a binary operator such as := + - AND OR ="
+        },
+        {
+            "id": "AA0008",
+            "action": "Error",
+            "justification": "You must specify open and close parenthesis after 'UserSecurityId'."
+        },
+        {
+            "id": "AA0021",
+            "action": "Error",
+            "justification": "Variable declarations should be ordered by type. Variables should be sorted like this: Record, Report, Codeunit, XmlPort, Page, Query, Notification, BigText, DateFormula, RecordId, RecordRef, FieldRef, and FilterPageBuilder. The rest of the variables are not sorted."
+        },
+        {
+            "id": "AA0074",
+            "action": "Error",
+            "justification": "Variable 'myUselessLabel' must have a suffix from this list: Msg, Tok, Err, Qst, Lbl, Txt"
+        },
+        {
+            "id": "AA0101",
+            "action": "Error",
+            "justification": "For pages of the type API the value of properties APIPublisher, APIGroup, EntityName, and EntitySetName should be camel-cased."
+        },
+        {
+            "id": "AA0103",
+            "action": "Error",
+            "justification": "For queries of the type API the value of properties APIPublisher, APIGroup, EntityName, and EntitySetName should be camel-cased."
+        },
+        {
+            "id": "AA0104",
+            "action": "Error",
+            "justification": "Column controls in queries of type API should have a camel case name."
+        },
+        {
+            "id": "AA0139",
+            "action": "Error",
+            "justification": "Possible overflow assigning 'Text[100]' to 'Code[80]'."
+        },
+        {
+            "id": "AA0175",
+            "action": "Error",
+            "justification": "Variable 'ViewNeoMappingLines' queries the database in 'ViewNeoMappingLinesIdentifierOnBeforeValidateIdentifier' but does not use the queried record. Only find or get record if you need to access the values. Consider using ISEMPTY."
+        },
+        {
+            "id": "AA0194",
+            "action": "Error",
+            "justification": "Remember to specify either the 'OnAction' trigger or the 'RunObject' property on an action."
+        },
+        {
+            "id": "AA0198",
+            "action": "Error",
+            "justification": "The name of the local variable is identical to a global variable."
+        },
+        {
+            "id": "AA0204",
+            "action": "Error",
+            "justification": "The name of the global variable 'ShowJobDetails' is identical to a field, method, or action in the same scope."
+        },
+        {
+            "id": "AA0205",
+            "action": "Error",
+            "justification": "Use of unassigned variable 'AppRec'."
+        },
+        {
+            "id": "AA0206",
+            "action": "Error",
+            "justification": "The variable 'MyTotalCustomerHours' is initialized but not used."
+        },
+        {
+            "id": "AA0213",
+            "action": "Error",
+            "justification": "The Table Job Resource must have specified ObsoleteState and ObsoleteReason."
+        },
+        {
+            "id": "AA0214",
+            "action": "Error",
+            "justification": "The record FinkzeitTaskResource should be modified before saving to the database."
+        },
+        {
+            "id": "AA0215",
+            "action": "Error",
+            "justification": "Naming should always be correct."
+        },
+        {
+            "id": "AA0225",
+            "action": "Error",
+            "justification": "The Caption property for PageField \"Parent Task Code\" must be filled in."
+        },
+        {
+            "id": "AA0228",
+            "action": "Error",
+            "justification": "Unused methods should be deleted."
+        },
+        {
+            "id": "AA0232",
+            "action": "Error",
+            "justification": "The FlowField Duration of \"Finkzeit Task Time\" should be added to the SIFT key."
+        },
+        {
+            "id": "AA0237",
+            "action": "Error",
+            "justification": "The name of non temporary variables 'TempJsonBuffer' must not be prefixed with Temp."
+        },
+        {
+            "id": "AA0244",
+            "action": "Error",
+            "justification": "The name of the parameter 'DevopsProject' is identical to a global variable."
+        },
+        {
+            "id": "AA0245",
+            "action": "Error",
+            "justification": "The name of the parameter 'FormID' is identical to a field, method, or action in the same scope."
+        },
+        {
+            "id": "AL0254",
+            "action": "Error",
+            "justification": "Sorting field 'Job Task No.' should be part of the keys for table 'Sales Cr.Memo Line'"
+        },
+        {
+            "id": "AL0432",
+            "action": "Error",
+            "justification": "Codeunit 'NoSeriesManagement' is marked for removal. Reason: Please use the \"No. Series\" and \"No. Series - Batch\" codeunits instead. Tag: 24.0."
+        },
+        {
+            "id": "AL0601",
+            "action": "Error",
+            "justification": "Table 'Job Resource' is removed.  This warning will become an error in a future release."
+        },
+        {
+            "id": "AL0603",
+            "action": "Error",
+            "justification": "An implicit conversion is being performed from a value of type 'Enum ' to a value of type 'Option'. This conversion can lead to unexpected runtime issues."
+        },
+        {
+            "id": "AL0604",
+            "action": "Error",
+            "justification": "Use of implicit 'with' will be removed in the future. Qualify with 'Rec'. This warning will become an error in a future release."
+        },
+        {
+            "id": "AL0606",
+            "action": "Error",
+            "justification": "With should never be used."
+        },
+        {
+            "id": "AL0667",
+            "action": "Error",
+            "justification": "'NewPage' is being deprecated in the versions: '1.0' or greater.  This warning will become an error in a future release."
+        },
+        {
+            "id": "AL0729",
+            "action": "Error",
+            "justification": "The Property 'Promoted' can only be used if the property 'PageType' is set with any of the values of: 'Card,Document,List,ListPlus,Worksheet' This warning will become an error in a future release."
+        },
+        {
+            "id": "AL0755",
+            "action": "Error",
+            "justification": "The 'StandardSalesCreditMemoJobINN' already defines a built-in member called 'Language'. Choose another name for GlobalVariable 'Language', or it might cause runtime issues. This warning will become an error when targeting a runtime with version '15.0' or higher."
+        },
+        {
+            "id": "AL0835",
+            "action": "Error",
+            "justification": "The LayoutFile './src/InnonavSalesNew.rdlc' is already being used. To avoid build issues, a layout file shouldn't be updated by different layouts."
+        },
+        {
+            "id": "AW0004",
+            "action": "Error",
+            "justification": "A Blob cannot be used as a source expression for a page field."
+        },
+        {
+            "id": "AW0005",
+            "action": "Error",
+            "justification": "Action with name 'Apps' should have a value for the Image property."
+        },
+        {
+            "id": "AW0006",
+            "action": "Error",
+            "justification": "The page 'Business Site Env. Type Apps' should use the UsageCategory and ApplicationArea properties to be searchable."
+        },
+        {
+            "id": "AW0008",
+            "action": "Error",
+            "justification": "The repeater 'General' in page 'Job Activity List' is not supported by the Web client. The Web client does not support displaying repeater controls in pages of type 'CardPart'."
+        },
+        {
+            "id": "AW0009",
+            "action": "Error",
+            "justification": "Using a Blob with subtype Bitmap on a page field is deprecated. Instead use the Media/MediaSet data types."
+        },
+        {
+            "id": "AW0011",
+            "action": "Error",
+            "justification": "Group \"Actions\" only contains promoted actions that are not set to PromotedOnly=\"true\"."
+        },
+        {
+            "id": "LC0000",
+            "action": "None",
+            "justification": "An error occurred in a given rule. Please create an issue on GitHub"
+        },
+        {
+            "id": "LC0002",
+            "action": "Error",
+            "justification": "Commit() needs a comment to justify its existence. Either a leading or a trailing comment."
+        },
+        {
+            "id": "LC0004",
+            "action": "Error",
+            "justification": "DrillDownPageId and LookupPageId must be filled in table when table is used in list page."
+        },
+        {
+            "id": "LC0006",
+            "action": "Error",
+            "justification": "Fields with property AutoIncrement cannot be used in temporary table (TableType = Temporary)."
+        },
+        {
+            "id": "LC0010",
+            "action": "Error",
+            "justification": "Show warning about code metrics for each function or trigger if either cyclomatic complexity is 8 or greater or maintainability index 20 or lower."
+        },
+        {
+            "id": "LC0012",
+            "action": "Error",
+            "justification": "Using hardcoded IDs in functions like Codeunit.Run() is not allowed."
+        },
+        {
+            "id": "LC0013",
+            "action": "Error",
+            "justification": "Any table with a single field in the PK of type code or text, should have set NotBlank on the PK field."
+        },
+        {
+            "id": "LC0014",
+            "action": "None",
+            "justification": "The Caption of permissionset objects should not exceed the maximum length."
+        },
+        {
+            "id": "LC0016",
+            "action": "Error",
+            "justification": "Caption is missing. Optionally this can also be activated for fields on API objects with the setting enableRule0016ForApiObjects."
+        },
+        {
+            "id": "LC0017",
+            "action": "Error",
+            "justification": "Writing to a FlowField is not common. Add a comment to explain this."
+        },
+        {
+            "id": "LC0018",
+            "action": "Error",
+            "justification": "Events in internal codeunits are not accessible to extensions and should therefore be avoided."
+        },
+        {
+            "id": "LC0019",
+            "action": "Error",
+            "justification": "If Data Classification is set on the Table. Fields do not need the same classification."
+        },
+        {
+            "id": "LC0020",
+            "action": "Error",
+            "justification": "If Application Area is set on the TablePage. Controls do not need the same classification."
+        },
+        {
+            "id": "LC0021",
+            "action": "Error",
+            "justification": "Confirm() must be implemented through the Confirm Management codeunit from the System Application."
+        },
+        {
+            "id": "LC0022",
+            "action": "Error",
+            "justification": "GlobalLanguage() must be implemented through the Translation Helper codeunit from the Base Application."
+        },
+        {
+            "id": "LC0023",
+            "action": "Error",
+            "justification": "Always provide fieldsgroups DropDown and Brick on tables."
+        },
+        {
+            "id": "LC0024",
+            "action": "Error",
+            "justification": "Procedure or Trigger declaration should not end with semicolon."
+        },
+        {
+            "id": "LC0025",
+            "action": "Error",
+            "justification": "Procedure must be either local, internal or define a documentation comment."
+        },
+        {
+            "id": "LC0026",
+            "action": "Error",
+            "justification": "ToolTip must end with a dot."
+        },
+        {
+            "id": "LC0027",
+            "action": "Error",
+            "justification": "Utilize the Page Management codeunit for launching page."
+        },
+        {
+            "id": "LC0028",
+            "action": "Error",
+            "justification": "Event subscriber arguments now use identifier syntax instead of string literals."
+        },
+        {
+            "id": "LC0029",
+            "action": "Error",
+            "justification": "Use CompareDateTime method in Type Helper codeunit for DateTime variable comparisons."
+        },
+        {
+            "id": "LC0030",
+            "action": "Error",
+            "justification": "Set Access property to Internal for Install/Upgrade codeunits."
+        },
+        {
+            "id": "LC0031",
+            "action": "Error",
+            "justification": "Set ReadIsolation property instead of LockTable method."
+        },
+        {
+            "id": "LC0032",
+            "action": "Error",
+            "justification": "Clear(All) does not affect or change values for global variables in single instance codeunits."
+        },
+        {
+            "id": "LC0033",
+            "action": "Error",
+            "justification": "The specified runtime version in app.json is falling behind."
+        },
+        {
+            "id": "LC0035",
+            "action": "Error",
+            "justification": "Explicitly set AllowInCustomizations for fields omitted on pages."
+        },
+        {
+            "id": "LC0036",
+            "action": "Error",
+            "justification": "ToolTip must start with the verb Specifies."
+        },
+        {
+            "id": "LC0037",
+            "action": "Error",
+            "justification": "Do not use line breaks in ToolTip."
+        },
+        {
+            "id": "LC0038",
+            "action": "Error",
+            "justification": "Try to not exceed 200 characters (including spaces)."
+        },
+        {
+            "id": "LC0039",
+            "action": "Error",
+            "justification": "The given argument has a different type from the one expected."
+        },
+        {
+            "id": "LC0040",
+            "action": "Error",
+            "justification": "Explicitly set the RunTrigger parameter on build-in methods."
+        },
+        {
+            "id": "LC0041",
+            "action": "Error",
+            "justification": "Empty Captions should be Locked."
+        },
+        {
+            "id": "LC0042",
+            "action": "Error",
+            "justification": "AutoCalcFields should only be used for FlowFields or Blob fields."
+        },
+        {
+            "id": "LC0043",
+            "action": "Error",
+            "justification": "Use SecretText type to protect credentials and sensitive textual values from being revealed."
+        },
+        {
+            "id": "LC0044",
+            "action": "Error",
+            "justification": "Tables coupled with TransferFields must have matching fields."
+        },
+        {
+            "id": "LC0045",
+            "action": "Error",
+            "justification": "Zero (0) Enum value should be reserved for Empty Value."
+        },
+        {
+            "id": "LC0046",
+            "action": "Error",
+            "justification": "Label with suffix Tok must be locked."
+        },
+        {
+            "id": "LC0048",
+            "action": "Error",
+            "justification": "Use Error with a ErrorInfo or Label variable to improve telemetry details."
+        },
+        {
+            "id": "LC0049",
+            "action": "Error",
+            "justification": "SourceTable property not defined on Page."
+        },
+        {
+            "id": "LC0050",
+            "action": "Error",
+            "justification": "SetFilter with unsupported operator in filter expression."
+        },
+        {
+            "id": "LC0051",
+            "action": "Error",
+            "justification": "Do not assign a text to a target with smaller size."
+        },
+        {
+            "id": "LC0052",
+            "action": "None",
+            "justification": "The internal procedure is declared but never used."
+        },
+        {
+            "id": "LC0054",
+            "action": "Error",
+            "justification": "Interface name must start with the capital 'I' without any spaces following it."
+        },
+        {
+            "id": "LC0056",
+            "action": "Error",
+            "justification": "Empty Enum values should not have a specified Caption property."
+        },
+        {
+            "id": "LC0057",
+            "action": "Error",
+            "justification": "Enum values must have non-empty a Caption to be selectable in the client"
+        },
+        {
+            "id": "LC0058",
+            "action": "Error",
+            "justification": "PageVariable.SetRecord(): You cannot use a temporary record for the Record parameter."
+        },
+        {
+            "id": "LC0059",
+            "action": "Error",
+            "justification": "Single quote escaping issue detected."
+        },
+        {
+            "id": "LC0060",
+            "action": "Error",
+            "justification": "The ApplicationArea property is not applicable to API pages."
+        },
+        {
+            "id": "LC0061",
+            "action": "Error",
+            "justification": "Pages of type API must have the ODataKeyFields property set to the SystemId field."
+        },
+        {
+            "id": "LC0062",
+            "action": "Error",
+            "justification": "Mandatory field is missing on API page."
+        },
+        {
+            "id": "LC0063",
+            "action": "Error",
+            "justification": "Consider naming field with a more descriptive name."
+        },
+        {
+            "id": "LC0064",
+            "action": "Error",
+            "justification": "Missing ToolTip property on table field."
+        },
+        {
+            "id": "LC0066",
+            "action": "Error",
+            "justification": "Duplicate ToolTip between page and table field."
+        },
+        {
+            "id": "LC0067",
+            "action": "Error",
+            "justification": "Set NotBlank property to false when 'No. Series' TableRelation exists."
+        },
+        {
+            "id": "LC0070",
+            "action": "Error",
+            "justification": "Zero index access on 1-based List objects."
+        },
+        {
+            "id": "PTE0023",
+            "action": "Error",
+            "justification": "The ordinal value '100 'for the EnumValue 'Tasks' is not valid. It should be within the range '[50000..99999]', which is allocated to the application."
+        }
+    ]
 }
