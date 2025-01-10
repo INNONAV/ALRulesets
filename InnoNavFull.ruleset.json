@@ -54,6 +54,11 @@
       "justification": "Variable 'ViewNeoMappingLines' queries the database in 'ViewNeoMappingLinesIdentifierOnBeforeValidateIdentifier' but does not use the queried record. Only find or get record if you need to access the values. Consider using ISEMPTY."
     },
     {
+      "id": "AA0181",
+      "action": "Error",
+      "justification": "The FindSet() or Find() methods must be used only in connection with the Next() method."
+    },
+    {
       "id": "AA0194",
       "action": "Error",
       "justification": "Remember to specify either the 'OnAction' trigger or the 'RunObject' property on an action."
