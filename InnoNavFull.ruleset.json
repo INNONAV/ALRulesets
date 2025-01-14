@@ -484,6 +484,11 @@
       "justification": "Zero index access on 1-based List objects."
     },
     {
+      "id": "LC0075",
+      "action": "Error",
+      "justification": "Incorrect number or type of arguments in .Get() method on Record object."
+    },
+    {
       "id": "LC0077",
       "action": "Error",
       "justification": "Methods should always be called with parenthesis."
