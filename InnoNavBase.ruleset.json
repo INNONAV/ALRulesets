@@ -68,6 +68,11 @@
       "justification": "Every object needs to specify a value for the Access property. Either true or false. Optionally this can also be activated for table fields with the setting enableRule0011ForTableFields."
     },
     {
+      "id": "LC0023",
+      "action": "None",
+      "justification": "Always provide fieldsgroups DropDown and Brick on tables."
+    },
+    {
       "id": "LC0034",
       "action": "None",
       "justification": "The property Extensible should be explicitly set for public objects."

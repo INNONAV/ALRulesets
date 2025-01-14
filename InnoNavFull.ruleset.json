@@ -284,11 +284,6 @@
       "justification": "GlobalLanguage() must be implemented through the Translation Helper codeunit from the Base Application."
     },
     {
-      "id": "LC0023",
-      "action": "None",
-      "justification": "Always provide fieldsgroups DropDown and Brick on tables."
-    },
-    {
       "id": "LC0024",
       "action": "Error",
       "justification": "Procedure or Trigger declaration should not end with semicolon."
