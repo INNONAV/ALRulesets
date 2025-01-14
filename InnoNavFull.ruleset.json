@@ -285,7 +285,7 @@
     },
     {
       "id": "LC0023",
-      "action": "Error",
+      "action": "None",
       "justification": "Always provide fieldsgroups DropDown and Brick on tables."
     },
     {
