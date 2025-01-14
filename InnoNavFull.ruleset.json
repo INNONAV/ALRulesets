@@ -484,6 +484,11 @@
       "justification": "Zero index access on 1-based List objects."
     },
     {
+      "id": "LC0077",
+      "action": "Error",
+      "justification": "Methods should always be called with parenthesis."
+    },
+    {
       "id": "PTE0023",
       "action": "Error",
       "justification": "The ordinal value '100 'for the EnumValue 'Tasks' is not valid. It should be within the range '[50000..99999]', which is allocated to the application."
