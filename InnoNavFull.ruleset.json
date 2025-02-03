@@ -135,8 +135,8 @@
     },
     {
       "id": "AL0432",
-      "action": "Info",
-      "justification": "Codeunit 'NoSeriesManagement' is marked for removal. Reason: Please use the \"No. Series\" and \"No. Series - Batch\" codeunits instead. Tag: 24.0."
+      "action": "Error",
+      "justification": "{0} '{1}' is marked for removal. {2}."
     },
     {
       "id": "AL0601",
