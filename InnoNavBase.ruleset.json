@@ -83,6 +83,11 @@
       "justification": "Locked Label must have a suffix Tok."
     },
     {
+      "id": "LC0051",
+      "action": "None",
+      "justification": "Do not assign a text to a target with smaller size."
+    },
+    {
       "id": "LC0053",
       "action": "None",
       "justification": "The internal procedure is only used in the object in which it is declared. Consider making the procedure local."

@@ -409,11 +409,6 @@
       "justification": "SetFilter with unsupported operator in filter expression."
     },
     {
-      "id": "LC0051",
-      "action": "Error",
-      "justification": "Do not assign a text to a target with smaller size."
-    },
-    {
       "id": "LC0052",
       "action": "None",
       "justification": "The internal procedure is declared but never used."
