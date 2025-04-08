@@ -135,7 +135,7 @@
     },
     {
       "id": "AL0432",
-      "action": "Error",
+      "action": "Warning",
       "justification": "{0} '{1}' is marked for removal. {2}."
     },
     {
