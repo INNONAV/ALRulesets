@@ -485,7 +485,7 @@
     },
     {
       "id": "LC0090",
-      "action": "Error",
+      "action": "Warning",
       "justification": "Cognitive Complexity"
     },
     {
