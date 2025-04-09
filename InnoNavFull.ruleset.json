@@ -135,7 +135,7 @@
     },
     {
       "id": "AL0432",
-      "action": "Warning",
+      "action": "Error",
       "justification": "{0} '{1}' is marked for removal. {2}."
     },
     {
@@ -227,11 +227,6 @@
       "id": "LC0006",
       "action": "Error",
       "justification": "Fields with property AutoIncrement cannot be used in temporary table (TableType = Temporary)."
-    },
-    {
-      "id": "LC0010",
-      "action": "Error",
-      "justification": "Show warning about code metrics for each function or trigger if either cyclomatic complexity is 8 or greater or maintainability index 20 or lower."
     },
     {
       "id": "LC0012",
@@ -487,6 +482,11 @@
       "id": "LC0077",
       "action": "Error",
       "justification": "Methods should always be called with parenthesis."
+    },
+    {
+      "id": "LC0090",
+      "action": "Error",
+      "justification": "Cognitive Complexity"
     },
     {
       "id": "PTE0023",

@@ -63,6 +63,11 @@
       "justification": "Show info message about code metrics for each function or trigger."
     },
     {
+      "id": "LC0010",
+      "action": "None",
+      "justification": "Show warning about code metrics for each function or trigger if either cyclomatic complexity is 8 or greater or maintainability index 20 or lower."
+    },
+    {
       "id": "LC0011",
       "action": "None",
       "justification": "Every object needs to specify a value for the Access property. Either true or false. Optionally this can also be activated for table fields with the setting enableRule0011ForTableFields."
