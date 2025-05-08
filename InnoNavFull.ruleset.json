@@ -474,11 +474,6 @@
       "justification": "Incorrect number or type of arguments in .Get() method on Record object."
     },
     {
-      "id": "LC0077",
-      "action": "Error",
-      "justification": "Methods should always be called with parenthesis."
-    },
-    {
       "id": "LC0090",
       "action": "Warning",
       "justification": "Cognitive Complexity"

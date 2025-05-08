@@ -123,6 +123,11 @@
       "justification": "Empty statements should be avoided or should have a leading or trailing comment explaining their use."
     },
     {
+      "id": "LC0077",
+      "action": "None",
+      "justification": "This rule is an extension on the existing CodeCop AA0008: Function calls should have parenthesis even if they do not have any parameters."
+    },
+    {
       "id": "LC0084",
       "action": "None",
       "justification": "The return value of the 'Get' method must be used to improve error handling or provide meaningful feedback to the user."
