@@ -13,6 +13,11 @@
       "justification": "The 'if' keyword should always start a line."
     },
     {
+      "id": "AA0021",
+      "action": "None",
+      "justification": "Variable declarations should be ordered by type."
+    },
+    {
       "id": "AA0470",
       "action": "None",
       "justification": "Rule deactivated: 'Variable 'x' with placeholders should have a comment explaining their content.'"

@@ -19,11 +19,6 @@
       "justification": "You must specify open and close parenthesis after 'UserSecurityId'."
     },
     {
-      "id": "AA0021",
-      "action": "Error",
-      "justification": "Variable declarations should be ordered by type. Variables should be sorted like this: Record, Report, Codeunit, XmlPort, Page, Query, Notification, BigText, DateFormula, RecordId, RecordRef, FieldRef, and FilterPageBuilder. The rest of the variables are not sorted."
-    },
-    {
       "id": "AA0074",
       "action": "Error",
       "justification": "Variable 'myUselessLabel' must have a suffix from this list: Msg, Tok, Err, Qst, Lbl, Txt"
