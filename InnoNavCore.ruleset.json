@@ -14,6 +14,11 @@
           "justification": "Variable is unused in."
       },
       {
+        "id": "AA0139",
+        "action": "Error",
+        "justification": "Do not assign a text to a target with smaller size."
+      },
+      {
         "id": "LC0001",
         "action": "Error",
         "justification": "FlowFields should not be editable."

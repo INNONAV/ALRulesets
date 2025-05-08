@@ -33,11 +33,6 @@
       "justification": "Rule deactivated: 'The name of temporary variable 'x' must be prefixed with Temp.'"
     },
     {
-      "id": "AA0139",
-      "action": "Error",
-      "justification": "Do not assign a text to a target with smaller size."
-    },
-    {
       "id": "AA0210",
       "action": "None",
       "justification": "Rule deactivated: 'The table Configuration Line does not contain a key with the field x'"
