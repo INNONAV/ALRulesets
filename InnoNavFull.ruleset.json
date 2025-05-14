@@ -479,6 +479,11 @@
       "justification": "Use the (CR)LFSeparator from the Type Helper codeunit."
     },
     {
+      "id": "LC0088",
+      "action": "Error",
+      "justification": "Option types should be avoided, use enum if applicable."
+    },
+    {
       "id": "LC0090",
       "action": "Error",
       "justification": "Cognitive Complexity"
