@@ -469,9 +469,19 @@
       "justification": "Zero index access on 1-based List objects."
     },
     {
+      "id": "LC0071",
+      "action": "Error",
+      "justification": "Incorrect IsHandled parameter assignment."
+    },
+    {
       "id": "LC0075",
       "action": "Error",
       "justification": "Incorrect number or type of arguments in .Get() method on Record object."
+    },
+    {
+      "id": "LC0083",
+      "action": "Error",
+      "justification": "Use new Date/Time/DateTime methods for extracting parts."
     },
     {
       "id": "LC0085",
