@@ -479,6 +479,11 @@
       "justification": "Incorrect number or type of arguments in .Get() method on Record object."
     },
     {
+      "id": "LC0076",
+      "action": "Error",
+      "justification": "The field with table relation should have at least the same length as the referenced field."
+    },
+    {
       "id": "LC0083",
       "action": "Error",
       "justification": "Use new Date/Time/DateTime methods for extracting parts."
