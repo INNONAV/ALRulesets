@@ -114,6 +114,11 @@
       "justification": "The name of non temporary variables 'TempJsonBuffer' must not be prefixed with Temp."
     },
     {
+      "id": "AA0242",
+      "action": "Error",
+      "justification": "Limit JIT loads by selecting all fields for load."
+    },
+    {
       "id": "AA0244",
       "action": "Error",
       "justification": "The name of the parameter 'DevopsProject' is identical to a global variable."
