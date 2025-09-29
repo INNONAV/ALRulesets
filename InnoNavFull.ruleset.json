@@ -64,9 +64,14 @@
       "justification": "The name of the local variable is identical to a global variable."
     },
     {
+      "id": "AA0202",
+      "action": "Error",
+      "justification": "The name of the local variable '%1' is identical to a field, method, or action in the same scope."
+    },
+    {
       "id": "AA0204",
       "action": "Error",
-      "justification": "The name of the global variable 'ShowJobDetails' is identical to a field, method, or action in the same scope."
+      "justification": "The name of the global variable '%1' is identical to a field, method, or action in the same scope."
     },
     {
       "id": "AA0205",
