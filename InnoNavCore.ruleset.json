@@ -1,48 +1,182 @@
 {
-    "name": "InnoNav Default Cloud New",
-    "description": "For New Cloud Projects",
-    "includedRuleSets": [
-        {
-            "action": "Default",
-            "path": "https://raw.githubusercontent.com/INNONAV/ALRulesets/refs/heads/main/InnoNavBase.ruleset.json"
-        }
-    ],
-    "rules": [
-      {
-          "id": "AA0137",
-          "action": "Error",
-          "justification": "Variable is unused in."
-      },
-      {
-        "id": "AA0139",
-        "action": "Error",
-        "justification": "Do not assign a text to a target with smaller size."
-      },
-      {
-        "id": "LC0001",
-        "action": "Error",
-        "justification": "FlowFields should not be editable."
-      },
-      {
-        "id": "LC0003",
-        "action": "Error",
-        "justification": "Do not use an Object ID for properties or variables declaration. Use Sales Header instead."
-      },
-      {
-        "id": "LC0005",
-        "action": "Error",
-        "justification": "Wrong casing detected! Use Sales Header instead."
-      },
-      {
-        "id": "LC0015",
-        "action": "Error",
-        "justification": "All application objects should be covered by at least one permission set in the extension."
-      },
-      {
-        "id": "LC0008",
-        "action": "Error",
-        "justification": "You must specify open and close parenthesis after 'Insert'."
-      }
-    ]
-  }
-  
+  "name": "InnoNav Core Ruleset",
+  "description": "Core rules - easy to fix or with auto-fixes available. Includes Base ruleset.",
+  "includedRuleSets": [
+    {
+      "action": "Default",
+      "path": "https://raw.githubusercontent.com/INNONAV/ALRulesets/refs/heads/main/InnoNavBase.ruleset.json"
+    }
+  ],
+  "rules": [
+    {
+      "id": "AA0137",
+      "action": "Error",
+      "justification": "Variable is unused."
+    },
+    {
+      "id": "AA0139",
+      "action": "Error",
+      "justification": "Do not assign a text to a target with smaller size."
+    },
+    {
+      "id": "AC0002",
+      "action": "Error",
+      "justification": "Single-field primary key requires NotBlank. [autofix] (migrated from LC0013)"
+    },
+    {
+      "id": "AC0003",
+      "action": "Error",
+      "justification": "Set NotBlank to false when No. Series TableRelation exists. [autofix] (migrated from LC0067)"
+    },
+    {
+      "id": "AC0007",
+      "action": "Error",
+      "justification": "Install/Upgrade codeunits should have Access=Internal. [autofix] (migrated from LC0030)"
+    },
+    {
+      "id": "AC0010",
+      "action": "Error",
+      "justification": "All objects should be covered by a permission set. (migrated from LC0015)"
+    },
+    {
+      "id": "AC0018",
+      "action": "Error",
+      "justification": "Empty captions should be locked. [autofix] (migrated from LC0041)"
+    },
+    {
+      "id": "AC0020",
+      "action": "Error",
+      "justification": "Labels suffixed with Tok must be locked. [autofix] (migrated from LC0046)"
+    },
+    {
+      "id": "CM0003",
+      "action": "Error",
+      "justification": "Procedure name must not contain whitespaces. Easy to fix."
+    },
+    {
+      "id": "CM0006",
+      "action": "Error",
+      "justification": "IP address must not be present in source code. Security, easy to fix."
+    },
+    {
+      "id": "CM0019",
+      "action": "Error",
+      "justification": "Local variable name must not contain whitespace or wildcard symbols."
+    },
+    {
+      "id": "CM0020",
+      "action": "Error",
+      "justification": "Global variable name must not contain whitespace or wildcard symbols."
+    },
+    {
+      "id": "CM0021",
+      "action": "Error",
+      "justification": "Parameter name must not contain whitespace or wildcard symbols."
+    },
+    {
+      "id": "CM0032",
+      "action": "Error",
+      "justification": "Property already exists at object level with the same value. Easy to remove."
+    },
+    {
+      "id": "CM0033",
+      "action": "Error",
+      "justification": "Redundant Editable property already set at object level. Easy to remove."
+    },
+    {
+      "id": "FC0002",
+      "action": "Error",
+      "justification": "Wrong casing detected. [autofix] (migrated from LC0005)"
+    },
+    {
+      "id": "INN0001",
+      "action": "Error",
+      "justification": "Record variables must have SecurityFiltering attribute. [autofix] Security."
+    },
+    {
+      "id": "INN0003",
+      "action": "Error",
+      "justification": "Always use BEGIN..END blocks. [autofix]"
+    },
+    {
+      "id": "INN0004",
+      "action": "Error",
+      "justification": "RecordRef variables must have SecurityFiltering attribute. [autofix] Security."
+    },
+    {
+      "id": "INN0007",
+      "action": "Error",
+      "justification": "QFIX object has expired and must be removed. Critical."
+    },
+    {
+      "id": "INN0007b",
+      "action": "Error",
+      "justification": "QFIX object must have ObsoleteTag with expiration date (DD.MM.YYYY). [autofix] Critical."
+    },
+    {
+      "id": "LC0003",
+      "action": "Error",
+      "justification": "Do not use Object IDs in declarations or function calls. [autofix] (includes old LC0012)"
+    },
+    {
+      "id": "LC0019",
+      "action": "Error",
+      "justification": "DataClassification redundancy. [autofix]"
+    },
+    {
+      "id": "LC0020",
+      "action": "Error",
+      "justification": "ApplicationArea redundancy. [autofix]"
+    },
+    {
+      "id": "LC0081",
+      "action": "Error",
+      "justification": "Use IsEmpty instead of Count for existence checks."
+    },
+    {
+      "id": "LC0083",
+      "action": "Error",
+      "justification": "Use new Date/Time/DateTime methods. [autofix]"
+    },
+    {
+      "id": "LC0094",
+      "action": "Error",
+      "justification": "AllowInCustomizations redundancy. [autofix]"
+    },
+    {
+      "id": "LC0095",
+      "action": "Error",
+      "justification": "Use partial records on read operations. [autofix]"
+    },
+    {
+      "id": "PC0001",
+      "action": "Error",
+      "justification": "FlowFields should not be editable. [autofix] (migrated from LC0001)"
+    },
+    {
+      "id": "PC0003",
+      "action": "Error",
+      "justification": "Filter operators should not be used in SetRange. [autofix] (migrated from LC0008)"
+    },
+    {
+      "id": "PC0008",
+      "action": "Error",
+      "justification": "SetFilter with unsupported operator. [autofix] (migrated from LC0050)"
+    },
+    {
+      "id": "PC0014",
+      "action": "Error",
+      "justification": "JsonToken JPath should use double quotes. [autofix]"
+    },
+    {
+      "id": "PC0015",
+      "action": "Error",
+      "justification": "Use IsNullGuid() for empty GUID validation. [autofix]"
+    },
+    {
+      "id": "PC0019",
+      "action": "Error",
+      "justification": "Single quote escaping issue in filters. [autofix] (migrated from LC0059)"
+    }
+  ]
+}

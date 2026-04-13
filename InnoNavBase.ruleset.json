@@ -1,11 +1,11 @@
 {
-  "name": "InnoNav Ruleset",
-  "description": "These rules must be respected by all the AL code written within the company.",
+  "name": "InnoNav Base Ruleset",
+  "description": "Minimum ruleset - disables noisy and overlapping rules. Start here and increase to Core, then Full.",
   "rules": [
     {
       "id": "AA0005",
       "action": "None",
-      "justification": "Rule deactivated: 'Only use BEGIN..END to enclose compound statements.'"
+      "justification": "Only use BEGIN..END to enclose compound statements. Disabled in favor of INN0003."
     },
     {
       "id": "AA0018",
@@ -18,119 +18,259 @@
       "justification": "Variable declarations should be ordered by type."
     },
     {
-      "id": "AA0470",
-      "action": "None",
-      "justification": "Rule deactivated: 'Variable 'x' with placeholders should have a comment explaining their content.'"
-    },
-    {
       "id": "AA0072",
       "action": "None",
-      "justification": "Rule deactivated: 'The name of x is not valid. The name of variables and parameters must be suffixed with the type or object name.'"
+      "justification": "The name of variables and parameters must be suffixed with the type or object name."
     },
     {
       "id": "AA0073",
       "action": "None",
-      "justification": "Rule deactivated: 'The name of temporary variable 'x' must be prefixed with Temp.'"
+      "justification": "The name of temporary variable must be prefixed with Temp."
     },
     {
       "id": "AA0210",
       "action": "None",
-      "justification": "Rule deactivated: 'The table Configuration Line does not contain a key with the field x'"
+      "justification": "The table does not contain a key with the field."
     },
     {
       "id": "AA0217",
       "action": "None",
-      "justification": "Rule deactivated: 'Use a text constant or label for format string in StrSubstNo.'"
+      "justification": "Use a text constant or label for format string in StrSubstNo."
     },
     {
       "id": "AA0218",
       "action": "None",
-      "justification": "Rule deactivated: 'The Tooltip property for x must be filled.'"
+      "justification": "The Tooltip property must be filled. Covered by INN0008."
     },
     {
       "id": "AA0241",
       "action": "None",
-      "justification": "You must use all lowercase letters for reserved keyword 'True'/'False'"
+      "justification": "You must use all lowercase letters for reserved keyword 'True'/'False'."
     },
     {
       "id": "AA0248",
       "action": "None",
-      "justification": "Use the this keyword for codeunit self-reference."
+      "justification": "Use the this keyword for codeunit self-reference. Overlaps CM0040."
+    },
+    {
+      "id": "AA0470",
+      "action": "None",
+      "justification": "Variable with placeholders should have a comment explaining their content."
+    },
+    {
+      "id": "AC0008",
+      "action": "None",
+      "justification": "DataPerCompany must be explicitly set. Disabled by default. (migrated from LC0007)"
+    },
+    {
+      "id": "AC0013",
+      "action": "None",
+      "justification": "DropDown and Brick fieldgroups must be defined. Disabled by default. (migrated from LC0023)"
+    },
+    {
+      "id": "AC0021",
+      "action": "None",
+      "justification": "Locked Label must have a suffix Tok. Disabled by default. (migrated from LC0047)"
+    },
+    {
+      "id": "AC0027",
+      "action": "None",
+      "justification": "Tok suffix for matching label values. (migrated from LC0055)"
+    },
+    {
+      "id": "AC0030",
+      "action": "None",
+      "justification": "Return value of Get must be used for error handling. (migrated from LC0084)"
+    },
+    {
+      "id": "AC0031",
+      "action": "None",
+      "justification": "Missing permissions to access tabledata. (migrated from LC0068)"
+    },
+    {
+      "id": "CM0002",
+      "action": "None",
+      "justification": "Tok label locking. Overlaps AC0020/AC0021."
+    },
+    {
+      "id": "CM0007",
+      "action": "None",
+      "justification": "FlowFields must not be editable. Overlaps PC0001."
+    },
+    {
+      "id": "CM0008",
+      "action": "None",
+      "justification": "Commit() must have a comment. Overlaps DC0001."
+    },
+    {
+      "id": "CM0009",
+      "action": "None",
+      "justification": "Hardcoded IDs in functions. Overlaps LC0003."
+    },
+    {
+      "id": "CM0010",
+      "action": "None",
+      "justification": "Caption is missing. Overlaps AC0011."
+    },
+    {
+      "id": "CM0011",
+      "action": "None",
+      "justification": "Procedure must not end with semicolon. Overlaps FC0001."
+    },
+    {
+      "id": "CM0012",
+      "action": "None",
+      "justification": "Procedure visibility/documentation. Overlaps DC0004."
+    },
+    {
+      "id": "CM0013",
+      "action": "None",
+      "justification": "ToolTip must end with a dot. Overlaps AC0014."
+    },
+    {
+      "id": "CM0014",
+      "action": "None",
+      "justification": "Position for global variables, triggers and methods. Can be noisy."
+    },
+    {
+      "id": "CM0018",
+      "action": "None",
+      "justification": "Access/Extensible properties. Overlaps PC0005/PC0006."
+    },
+    {
+      "id": "CM0023",
+      "action": "None",
+      "justification": "Mandatory affixes. Depends on AppSourceCop.json config."
+    },
+    {
+      "id": "CM0024",
+      "action": "None",
+      "justification": "Empty captions should be locked. Overlaps AC0018."
+    },
+    {
+      "id": "CM0025",
+      "action": "None",
+      "justification": "AutoCalcFields on normal fields. Overlaps PC0007."
+    },
+    {
+      "id": "CM0026",
+      "action": "None",
+      "justification": "Enum zero reserved for empty. Overlaps AC0019."
+    },
+    {
+      "id": "CM0027",
+      "action": "None",
+      "justification": "TransferFields matching. Overlaps PC0020/PC0021."
+    },
+    {
+      "id": "CM0028",
+      "action": "None",
+      "justification": "Record.Get() argument validation. Overlaps PC0013."
+    },
+    {
+      "id": "CM0029",
+      "action": "None",
+      "justification": "Option data type not allowed. Overlaps LC0088."
+    },
+    {
+      "id": "CM0031",
+      "action": "None",
+      "justification": "Unused object. Disabled by default in CompanialCop."
+    },
+    {
+      "id": "CM0034",
+      "action": "None",
+      "justification": "Table relation value too long. Overlaps PC0028."
+    },
+    {
+      "id": "CM0035",
+      "action": "None",
+      "justification": "Unused global procedure. Disabled by default in CompanialCop."
+    },
+    {
+      "id": "CM0036",
+      "action": "None",
+      "justification": "Event publishers must be local. Overlaps AC0024."
+    },
+    {
+      "id": "CM0038",
+      "action": "None",
+      "justification": "Parenthesis on function calls. Overlaps FC0003."
+    },
+    {
+      "id": "CM0039",
+      "action": "None",
+      "justification": "Temp records should not trigger table triggers. Overlaps PC0027."
+    },
+    {
+      "id": "CM0040",
+      "action": "None",
+      "justification": "Add 'this' qualification. Overlaps AA0248."
+    },
+    {
+      "id": "DC0003",
+      "action": "None",
+      "justification": "Empty statements should have a comment. (migrated from LC0069)"
+    },
+    {
+      "id": "FC0003",
+      "action": "None",
+      "justification": "Function calls should have parenthesis. (migrated from LC0077)"
+    },
+    {
+      "id": "INN0009",
+      "action": "None",
+      "justification": "FlowField detection. Informational only."
     },
     {
       "id": "LC0007",
       "action": "None",
-      "justification": "Every table needs to specify a value for the DataPerCompany property. Either true or false."
+      "justification": "Maintainability Index metric. Informational. (split from old LC0009)"
+    },
+    {
+      "id": "LC0008",
+      "action": "None",
+      "justification": "Maintainability Index threshold. (split from old LC0010)"
     },
     {
       "id": "LC0009",
       "action": "None",
-      "justification": "Show info message about code metrics for each function or trigger."
+      "justification": "Cyclomatic Complexity metric. Informational. (split from old LC0009)"
     },
     {
       "id": "LC0010",
       "action": "None",
-      "justification": "Show warning about code metrics for each function or trigger if either cyclomatic complexity is 8 or greater or maintainability index 20 or lower."
-    },
-    {
-      "id": "LC0011",
-      "action": "None",
-      "justification": "Every object needs to specify a value for the Access property. Either true or false. Optionally this can also be activated for table fields with the setting enableRule0011ForTableFields."
-    },
-    {
-      "id": "LC0023",
-      "action": "None",
-      "justification": "Always provide fieldsgroups DropDown and Brick on tables."
-    },
-    {
-      "id": "LC0034",
-      "action": "None",
-      "justification": "The property Extensible should be explicitly set for public objects."
-    },
-    {
-      "id": "LC0047",
-      "action": "None",
-      "justification": "Locked Label must have a suffix Tok."
-    },
-    {
-      "id": "LC0051",
-      "action": "None",
-      "justification": "Do not assign a text to a target with smaller size."
+      "justification": "Cyclomatic Complexity threshold. (split from old LC0010)"
     },
     {
       "id": "LC0053",
       "action": "None",
-      "justification": "The internal procedure is only used in the object in which it is declared. Consider making the procedure local."
+      "justification": "Internal procedure only used in declaring object. Consider making it local."
     },
     {
-      "id": "LC0055",
+      "id": "LC0089",
       "action": "None",
-      "justification": "The suffix Tok is meant to be used when the value of the label matches the name."
+      "justification": "Cognitive Complexity metric. Informational, can be noisy."
     },
     {
-      "id": "LC0065",
+      "id": "PC0005",
       "action": "None",
-      "justification": "Event subscriber var keyword mismatch."
+      "justification": "Extensible property should be explicitly set. (migrated from LC0034)"
     },
     {
-      "id": "LC0068",
+      "id": "PC0006",
       "action": "None",
-      "justification": "Informs the user that there are missing permission to access tabledata."
+      "justification": "Access property should be explicitly set. (migrated from LC0011)"
     },
     {
-      "id": "LC0069",
+      "id": "PC0010",
       "action": "None",
-      "justification": "Empty statements should be avoided or should have a leading or trailing comment explaining their use."
+      "justification": "Event subscriber var keyword mismatch. (migrated from LC0065)"
     },
     {
-      "id": "LC0077",
+      "id": "PC0022",
       "action": "None",
-      "justification": "This rule is an extension on the existing CodeCop AA0008: Function calls should have parenthesis even if they do not have any parameters."
-    },
-    {
-      "id": "LC0084",
-      "action": "None",
-      "justification": "The return value of the 'Get' method must be used to improve error handling or provide meaningful feedback to the user."
+      "justification": "Do not assign a text to a target with smaller size. (migrated from LC0051)"
     }
   ]
 }
