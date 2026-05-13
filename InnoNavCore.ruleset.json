@@ -144,11 +144,6 @@
       "justification": "AllowInCustomizations redundancy. [autofix]"
     },
     {
-      "id": "LC0095",
-      "action": "Error",
-      "justification": "Use partial records on read operations. [autofix]"
-    },
-    {
       "id": "PC0001",
       "action": "Error",
       "justification": "FlowFields should not be editable. [autofix] (migrated from LC0001)"
